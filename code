@@ -1,0 +1,37 @@
+import java.util.Arrays;
+
+public class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+
+        int[] a = nums;
+        Arrays.sort(a);
+
+        int n = a.length;
+        int result = a[0] + a[1] + a[2];
+
+        for (int i = 0; i < n - 2; i++) {
+
+            int left = i + 1;
+            int right = n - 1;
+
+            while (left < right) {
+
+                int s = a[i] + a[left] + a[right];
+
+                if (Math.abs(s - target) < Math.abs(result - target)) {
+                    result = s;
+                }
+
+                if (s < target) {
+                    left++;
+                } else if (s > target) {
+                    right--;
+                } else {
+                    return s;
+                }
+            }
+        }
+
+        return result;
+    }
+}
