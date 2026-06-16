@@ -1,5 +1,8 @@
 # 3Sum Closest
 
+## Problem Link
+🔗 https://leetcode.com/problems/3sum-closest/
+
 ## Problem Statement
 Given an integer array `nums` of length `n` and an integer `target`, find three integers in `nums` such that the sum is closest to `target`.
 
@@ -13,19 +16,14 @@ Return the sum of the three integers.
 5. Return immediately if an exact target match is found.
 
 ## Time Complexity
-O(n²)
+**O(n²)**
 
 ## Space Complexity
-O(1)
+**O(1)**
 
 ## Example
 
-Input:
+**Input**
+```text
 nums = [-1, 2, 1, -4]
 target = 1
-
-Output:
-2
-
-Explanation:
-(-1 + 2 + 1) = 2, which is the closest sum to target 1.
