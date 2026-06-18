@@ -12,7 +12,7 @@ Return the sum of the three integers.
 1. Sort the array.
 2. Fix one element using a loop.
 3. Use the Two Pointer technique to find the closest sum.
-4. Update the result whenever a closer sum is found.
+4. 4. Update the result whenever a closer sum is found.
 5. Return immediately if an exact target match is found.
 
 ## Time Complexity
